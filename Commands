@@ -1,0 +1,25 @@
+#print process
+ ps -ef 
+
+#awk (pattern scanning) filter inf from output, like finding word,coloumn in multiple sentence    
+ps -ef | awk" " '{print $2}'
+
+#wap scriptt print only error from remote
+curl <link> | grep ERROR
+
+#script- divisible by 3&5 not 15
+
+  #!/bin/bash
+  if (['expr $i % 2' == 0] || ['expr $i % 5 == 0] && ['expr &i % 15 != 0]);
+  then 
+         echo $i
+  fi;
+  done
+
+# give permissions to run
+chmod 777 test.sh 
+
+#run script
+./test.sh
+    or
+sh test.sh
